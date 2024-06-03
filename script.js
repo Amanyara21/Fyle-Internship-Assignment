@@ -45,25 +45,25 @@ $(document).ready(function () {
     });
 
 
-    $('#contact-form').submit(function (event) {
-        event.preventDefault();
-        const form = $(this);
+    // $('#contact-form').submit(function (event) {
+    //     event.preventDefault();
+    //     const form = $(this);
 
-        $.ajax({
-            type: form.attr('method'),
-            url: form.attr('action'),
-            data: form.serialize(),
-            success: function (response) {
-                $('#contactForm').addClass('hidden');
-                $('body').css('overflow', 'auto'); 
-                $('body').css('background', 'auto');
-                $('img').css('opacity', '1');
-            },
-            error: function (error) {
-                alert('Error submitting form!');
-            }
-        });
-    });
+    //     $.ajax({
+    //         type: form.attr('method'),
+    //         url: form.attr('action'),
+    //         data: form.serialize(),
+    //         success: function (response) {
+    //             $('#contactForm').addClass('hidden');
+    //             $('body').css('overflow', 'auto'); 
+    //             $('body').css('background', 'auto');
+    //             $('img').css('opacity', '1');
+    //         },
+    //         error: function (error) {
+    //             alert('Error submitting form!');
+    //         }
+    //     });
+    // });
 
 
 });
