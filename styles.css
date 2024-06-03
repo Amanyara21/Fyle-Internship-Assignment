@@ -252,7 +252,7 @@ p {
 }
 
 .quatations::before{
-    content: url(./images/Quotemarks-left.svg);
+    content: url('./images/Quotemarks-left.svg');
     position: absolute;
     z-index: -1;
     left: -15px;
